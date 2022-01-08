@@ -42,7 +42,7 @@ function Home() {
   const [data, setData] = React.useState(null);
 
   React.useEffect((data) => {
-    fetch("/api")
+    fetch("http://localhost:3001/api")
     .then((res) => res.json())
     .then((data_)=>{ setData(data_)});
   },[]);
